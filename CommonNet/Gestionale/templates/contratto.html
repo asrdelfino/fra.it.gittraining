@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Contratto di {{ Contratto.contributoattivazione }}</h1>
+<br>
+    {% for utente in utenti.all %}
+        <h5><strong>· {{ utente.contributoattivazione }} {{ utente.nome }}</strong> </h5>
+
+    {% endfor %}
+{% endblock content %}

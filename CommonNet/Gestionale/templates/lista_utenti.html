@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Lista utenti:</h1>
+<br>
+    {% for utente in object_list %}
+        <h5><strong>· {{ utente.cognome }} {{ utente.nome }}</strong> </h5>
+
+    {% endfor %}
+{% endblock content %}
